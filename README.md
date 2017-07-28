@@ -28,7 +28,8 @@ The submit button will send the inputted data to a table specifically for that m
 #Charts Page
 User will choose muscle group from dropdown menu, then choose the desired month of results in a seperate dropdown menu.
 Table displaying inputted data of the chosen month will populate on the left side of the page. 
-Upon clicking the each specific exercise, on the right side of the page a line graph will reflect weight lifted on the X axis and total reps on the Y axis.
+Upon clicking the each specific muscle group, on the right side of the page a line graph will reflect weight lifted on the X axis and total reps on the Y axis
+Each exercise for chosen muscle group will display on chart in a certain color
 Button on bottom right corner will link user to Progress page
 
 #Progress Page
@@ -40,3 +41,32 @@ Column 2 will display the result of the equation (weight * total reps) for the e
 Column 3 will display the result of the equation (weight * total reps) for the latest date of the current month in the 'This Month' table and the most recent submission in the 'Year to Date' table that a workout was submitted for the chosen muscle group. 
 User will have ability to press a button that performs equation ((weight2 - weight1)/(reps2 + reps1))/(weight2 - weight1), which will display resulted percentage increase/decrease in "gainz"
 
+FEATURES
+
+Splash/Welcome page 
+  - user profile pic, welcome message
+  - nav bar with links to rest of site
+  
+User Profile page
+  - profile pic, option to update/change it
+  - div container with user profile information including name/username, weight and starting date
+  
+Exercises page
+  - Display of current date
+  - User profile pic with message
+  - Dropdown menu with option to choose from 7 different muscle groups
+  - Table with populated exercises for chosen muscle group in col1, weight lifted in col2, total reps in col3
+  
+Lift Charts page
+  - User profile pic with message
+  - Dropdown menu with option to choose from 7 different muscle groups
+  - Dropdown menu with option to choose month of year to view
+  - PHP/Database connected chart will display line graph showing different coordinate points correlating to weight lifted and     total reps
+  
+Progress page
+  - User profile pic with message
+  - Dropdown menu with option to choose from 7 different muscle groups
+  - Table 1 showing data for current month, with populated exercises for chosen muscle group in col1, total weight lifted for     the exercise in week 1 of that month in col2, and total weight lifted for that exercise in week 4 of that month in col3
+  - Table 2 showing data from earliest input date to current date with populated exercises for chosen muscle group in col1,       total weight lifted for the exercise in earliest date of that month in col2, and total weight lifted for that exercise         in most recent date of in col3
+  - Calculated progress for each exercise shown below each table
+  - Encouraging message to user
