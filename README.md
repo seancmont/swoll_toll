@@ -21,7 +21,7 @@ As a user I should be able to upload a profile picture to be displayed in the up
 #Exercises Page
 Users will be able to select from seven seperate muscle groups.
 After selecting a group, a default list of exercises will populate. There will be a form to submit a new exercise if the user chooses.
-Exercises will populate into a table under column 1. Column 2 will have forms for each exercises to submit the amount of weight lifted. Column 3 will also have forms for each exercise, but will be used to store how many total reps were done before muscle failure. 
+Exercises will populate into a table under column 1. Column 2 will have forms for each exercises to submit the amount of weight lifted. Column 3 will also have forms for each exercise, but will be used to store how many total reps were done before muscle failure. Total reps are entered assuming user did 3 seperate sets by default. 
 After all exercise fields are completed, user will click 'Submit Workout' button to store the table to their profile. Table will be submitted with the current date and linked to calendar.
 The submit button will send the inputted data to a table specifically for that muscle group, ordered chronologically.
 
