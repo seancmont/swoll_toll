@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1>About</h1>
-	<p>Hi I'm Sean and I wanted a way to track my progress at the gym. Let's get lifting</p>
+	<p>Hi I'm Sean and I wanted to make a way to track my progress at the gym. Let's get lifting</p>
 	
 </body>
 </html>

@@ -18,6 +18,7 @@
             <div class="title m-b-md">
                 Let's get to work
             </div>
+            <!-- links to different sections of the site -->
             <div class="links">
                 <a href=/about>About</a>
                 <a href=/exercises>Exercises</a>
