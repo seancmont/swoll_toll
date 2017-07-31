@@ -17,7 +17,7 @@ class SeedGroupsTable extends Migration
         'name' => 'Chest',
         'created_at' => Carbon::now(),
         'updated_at' => Carbon::now(),
-    ]};
+    ]);
         DB::table('groups')->insert([
         'name' => 'Back',
         'created_at' => Carbon::now(),
@@ -60,4 +60,4 @@ class SeedGroupsTable extends Migration
     {
         //
     }
-
+}

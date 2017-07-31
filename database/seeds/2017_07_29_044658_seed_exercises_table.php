@@ -14,44 +14,44 @@ class SeedExercisesTable extends Migration
     public function up()
     {
         // Store id for Chest in $chest_id
-    $barcelona_id = DB::table('groups')
+    $chest_id = DB::table('groups')
        ->select(DB::raw('id'))
        ->where('name', '=', 'Chest')
        ->get();
     }
 
         // Store id for Back in $back_id
-    $barcelona_id = DB::table('groups')
+    $back_id = DB::table('groups')
        ->select(DB::raw('id'))
        ->where('name', '=', 'Back')
        ->get();
 
         // Store id for Legs in $legs_id
-    $barcelona_id = DB::table('groups')
+    $legs_id = DB::table('groups')
        ->select(DB::raw('id'))
        ->where('name', '=', 'Legs')
        ->get();
 
        // Store id for Shoulders in $shoulders_id
-    $barcelona_id = DB::table('tours')
+    $shoulders_id = DB::table('groups')
        ->select(DB::raw('id'))
        ->where('name', '=', 'Shoulders')
        ->get();
 
        // Store id for Biceps in $biceps_id
-    $barcelona_id = DB::table('groups')
+    $biceps_id = DB::table('groups')
        ->select(DB::raw('id'))
        ->where('name', '=', 'Biceps')
        ->get();
 
        // Store id for Triceps in $triceps_id
-    $barcelona_id = DB::table('groups')
+    $triceps_id = DB::table('groups')
        ->select(DB::raw('id'))
        ->where('name', '=', 'Triceps')
        ->get();
 
        // Store id for Abs in $abs_id
-    $barcelona_id = DB::table('groups')
+    $abs_id = DB::table('groups')
        ->select(DB::raw('id'))
        ->where('name', '=', 'Abs')
        ->get();
@@ -85,6 +85,42 @@ class SeedExercisesTable extends Migration
 
     DB::table('exercises')->insert([
         'group_id' => $chest_id[0]->id,
+        'name' => 'Pec Fly',
+        'weight' => '225',
+        'total_reps' => '20'
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
+    ]);
+
+    DB::table('exercises')->insert([
+        'group_id' => $back_id[0]->id,
+        'name' => 'Pec Fly',
+        'weight' => '225',
+        'total_reps' => '20'
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
+    ]);
+
+    DB::table('exercises')->insert([
+        'group_id' => $back_id[0]->id,
+        'name' => 'Pec Fly',
+        'weight' => '225',
+        'total_reps' => '20'
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
+    ]);
+
+    DB::table('exercises')->insert([
+        'group_id' => $back_id[0]->id,
+        'name' => 'Pec Fly',
+        'weight' => '225',
+        'total_reps' => '20'
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
+    ]);
+
+    DB::table('exercises')->insert([
+        'group_id' => $back_id[0]->id,
         'name' => 'Pec Fly',
         'weight' => '225',
         'total_reps' => '20'
