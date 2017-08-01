@@ -37,3 +37,11 @@ $ php artisan make:seeder GroupsTableSeeder
 Seeder created successfully.
 $ php artisan make:seeder ExercisesTableSeeder
 Seeder created successfully.
+
+6. make a model for each table
+
+$ php artisan make:model muscle_groups
+$ php artisan make:model exercises
+
+
+
