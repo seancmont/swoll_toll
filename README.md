@@ -43,5 +43,12 @@ Seeder created successfully.
 $ php artisan make:model muscle_groups
 $ php artisan make:model exercises
 
+7. make controllers for each table
+
+$ php artisan make:controller muscle_groupsController
+Controller created successfully.
+$ php artisan make:controller exercisesController
+Controller created successfully.
+
 
 

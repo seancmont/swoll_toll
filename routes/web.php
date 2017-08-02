@@ -15,18 +15,8 @@ Route::get('/about', function() {
 	return view('about'); 
 });
 // Route to call exercises page
-Route::get('/exercises', function() {
-	$muscleGroups = [
-		'Chest',
-		'Back',
-		'Legs',
-		'Shoulders',
-		'Triceps',
-		'Biceps',
-		'Abs'
-	];
-	return view('exercises', compact('muscleGroups')); 
-});
+Route::get('/exercises', 'exercisesController@index'); 
+
 // Route to call lift charts page
 Route::get('/charts', function() {
 	return view('charts'); 
@@ -38,3 +28,6 @@ Route::get('/progress', function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/musclegroups', 'muscle_groupsController@index');
+
