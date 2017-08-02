@@ -2,75 +2,50 @@
 
 @section('content')
 
-	<h1>Exercises</h1>
-	<p>Choose a muscle group for the day</p>
+<label for="muscleGroups">Choose today's muscle group for your lift: </label>
+<select id="muscleGroups" onchange="chosenMuscle();">
+<option>Please select</option>
 		<!-- list of each muscle group -->
-		<ul>
-            @foreach ($exercises as $muscleGroup)
-                <li>{{ $muscleGroup->name }}</li>
+		<!-- //convert list of exercises to control the dropdown -->
+            @foreach ($exercises as $exercise) 
+				<option value="{{ $exercise->name }}">{{ $exercise->name }}</option>
+                
+            
             @endforeach
-        </ul>
-        
+ </select>
+      
+
+
+<!-- function to initially hide all exercises, then show exercises listed under chosen muscle group -->
 <script>
 function chosenMuscle() {
-var showExercises = document.getElementById(muscleGroups.value);
-showExercises.style.display = 'none';
+	var showExercises = document.getElementById(muscleGroups.value);
+	var hideExercises = document.getElementsByClassName('muscleList');
+	console.log(hideExercises);
+	console.log(showExercises);
+	for(var i = 0; i < hideExercises.length; i++){
+		console.log(i);	
+		hideExercises[i].style.visibility = 'hidden';
+	}
+		showExercises.style.visibility = 'visible';
 }
 </script>
 
-<label for="muscleGroups">Choose today's muscle group for your lift: </label>
-<select id="muscleGroups" onchange="chosenMuscle()">
-  <option>Please select</option>
-  <option value="chest">Chest</option>
-  <option value="back">Back</option>
-  <option value="legs">Legs</option>
-  <option value="shoulders">Shoulders</option>
-  <option value="biceps">Biceps</option>
-  <option value="triceps">Triceps</option>
-  <option value="abs">Abs</option>
-</select>
+<!-- get data from exercise table in database-->
 
-<script>
-	var muscleArray = ['chest', 'shoulders'];
-	// for loop that sets all muscles group displays to none
-	var muscleGroups = document.getElementById("muscleGroups");
-	console.log(muscleGroups.value);
-	// function that runs when group is chosen from the dropdown
-	function chosenMuscle() {
-		muscleGroups = document.getElementById("muscleGroups");
-
-		console.log("Hey Sean", muscleGroups.value)
-		var showExercises = document.getElementById(muscleGroups.value);
-		console.log(showExercises);
-		showExercises.style.display = 'block';
-	}
-// muscleGroups.onchange = function () {
-// 	var selectedGroup = this.value;
-// 	var muscleGroup = document.getElementById("value");
-// 	value.style.display = 'none';
-// }
-</script>
-
-<!-- error.style.display = 'none';
-output.style.display = 'block'; -->
 
 
 <!-- when an option is selected, show the right div -->
 
-<div id="chest"> <!-- hidden by default -->
- "Flat Bench Press"
- "Incline Bench Press"
- "Decline Bench Press"
- "Pec Fly"
- "Chest Dips"
-</div>
+ @foreach ($exercises as $muscleGroup) 
+		<div class="muscleList" id="{{ $muscleGroup->name }}">		
+				@foreach ($muscleGroup->exercises as $exercise)
+					{{ $exercise->name }}
+				@endforeach
+        </div>        
+            
+ @endforeach
 
-<div id="shoulders"> <!-- hidden by default -->
- "Shoulder Press"
- "Front Lateral Raises"
- "Side Lateral Raises"
- "Upright Barbell Row"
- "Shrugs"
-</div>
+
 
 @endsection

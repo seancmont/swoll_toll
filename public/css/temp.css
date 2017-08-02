@@ -3,6 +3,6 @@ body {
 	background: 
 }
 
-#chest, #shoulders {
-	display: none;
+.muscleList {
+	visibility: hidden;
 }
