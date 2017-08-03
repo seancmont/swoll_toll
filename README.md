@@ -49,6 +49,13 @@ $ php artisan make:controller muscle_groupsController
 Controller created successfully.
 $ php artisan make:controller exercisesController
 Controller created successfully.
+$  php artisan make:controller progressController
+Controller created successfully.
+
+8. make dropdown box with all muscle groups, calling data from sql
+
+9. make table to display exercise names, weights and total_reps, filling with data from sql for each muscle group
+
 
 
 

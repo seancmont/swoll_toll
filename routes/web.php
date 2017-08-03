@@ -18,13 +18,11 @@ Route::get('/about', function() {
 Route::get('/exercises', 'exercisesController@index'); 
 
 // Route to call lift charts page
-Route::get('/charts', function() {
-	return view('charts'); 
-});
+Route::get('/charts', 'chartsController@index');
+
 // Route to call page that tracks lift gainz
-Route::get('/progress', function() {
-	return view('progress'); 
-});
+Route::get('/progress', 'progressController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

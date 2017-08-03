@@ -1,8 +1,74 @@
+/*Navbar*/
+
+.the-navbar {
+	background: #F16B6F;
+	color: white;
+}
+
+a.navbar-brand {
+	color: white;
+	letter-spacing: 2px;
+
+}
+
+.navbar-toggle {
+	color: white;
+	background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+a {
+	color: white;
+}
+
+span.icon-bar {
+	background: white;
+}
+
+/*Body of page*/
+
+label {
+	margin: 10px;
+}
+
 body {
-	color: #A593E0!important;
+	color: #6E7783;
 	background: 
 }
 
+
+/*Exercises table*/
+
 .muscleList {
-	visibility: hidden;
+	display: none;
+}
+
+table {
+	border-collapse: collapse;
+	width: 35%;
+	margin-left: 10px;
+}
+table, th, td {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 5px;
+	text-align: center;
+}
+
+th {
+	height: 30px;
+	background-color: #F16B6F;
+    color: white;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+form {
+	margin-top: 15px;
+	margin-left: 5px;
 }
