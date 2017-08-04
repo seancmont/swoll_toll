@@ -1,6 +1,6 @@
 /*Navbar*/
 
-.the-navbar {
+.top-navbar {
 	background: #F16B6F;
 	color: white;
 }
@@ -26,10 +26,28 @@ span.icon-bar {
 	background: white;
 }
 
+.dropdown-menu>li>a, a {
+    font-weight: 400;
+    color: #004e66;
+}
+
 /*Body of page*/
+
+div.payit.m-b-md {
+	color: #a7a7a2;
+	margin-top: 20px;
+}
 
 div.links, div.links a {
 	color: #a7a7a2;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+div.links, div.links a:hover {
+	color: #004e66;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 div.container {

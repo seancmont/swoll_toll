@@ -3,18 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\muscle_groups;
+use \App\exercises;
+
 
 class exercisesController extends Controller
 {
     public function index()
     {
-    	$exercises = \App\muscle_groups::with(['exercises'])->get();
+    	$exercises = muscle_groups::with(['exercises'])->get();
 
     	return view('exercises', compact('exercises'));
     }
 
-    public function save()
+    public function save(Request $request)
     {
-    	return "saving data";
+    	return $request->all();
+    	// $exercises = new exercises;
+    	// $exercises->name = $request->name;
+    	// $exercises->save();
+    	// return back();
     }
 }

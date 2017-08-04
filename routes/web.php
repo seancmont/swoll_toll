@@ -16,7 +16,7 @@ Route::get('/about', function() {
 });
 // Route to call exercises page
 Route::get('/exercises', 'exercisesController@index');
-Route::post('/exercises/save', 'exercisesController@save'); 
+Route::post('/exercises', 'exercisesController@save'); 
 
 // Route to call lift charts page
 Route::get('/charts', 'chartsController@index');

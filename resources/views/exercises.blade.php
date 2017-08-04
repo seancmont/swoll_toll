@@ -29,6 +29,8 @@ function chosenMuscle() {
 }
 
 function saveExercise(event) {
+	// var child = document.getElementById("muscleList").childNodes;
+	// console.log(child);
 	// console.log("testing", showExercises.id);
 	var currentTable = document.getElementById(showExercises.id);
 	// console.log(showExercises);
@@ -37,6 +39,18 @@ function saveExercise(event) {
 	console.log(input);
 	event.preventDefault()
 }
+
+// function addExerciseToMuscleGroup($db, $id, $muscle_groups_id) {
+//     $stmt = "insert into muscle_groups_id (id, muscle_groups_id) values ("
+//       . $id . ', ' . $muscle_groups_id . ');';
+//     $result = pg_query($stmt);
+//   }
+
+// function getDb() {
+//     $db = pg_connect("host=localhost port=5432 dbname=swoll_toll user=swoll_toll password=sean");
+//     console.log("connecting with db");
+//     return $db;
+//   }
 // function addExercise(event) {
 // 	console.log('new exercise added');
 // 	// stops default behavior of submit button
@@ -54,7 +68,7 @@ function saveExercise(event) {
  @foreach ($exercises as $muscleGroup) 
 		<div class="muscleList" id="{{ $muscleGroup->name }}">	
 			<!-- <form method="post"  action="/exercises/save" onsubmit="saveExercise(event)"> -->
-				<form method="post" onsubmit="saveExercise(event)">
+				<form method="post" action="/exercises">
 				{{ csrf_field() }}
 					<table>
 					 	<tr>
@@ -65,8 +79,9 @@ function saveExercise(event) {
 				@foreach ($muscleGroup->exercises as $exercise)
 					<tr>
 							<td>{{ $exercise->name }}</td>
-							<td><input type="integer" name="Weight"></td>
-					    	<td><input type="integer" name="Total Reps"></td>	
+							<input type="hidden" name="{{ $exercise->name }}_name" value="{{ $exercise->name }}">
+							<td><input type="integer" name="{{ $exercise->name }}_Weight"></td>
+					    	<td><input type="integer" name="{{ $exercise->name }}_Total Reps"></td>	
 					</tr>
 				@endforeach
 					<tr>		  			
@@ -80,5 +95,7 @@ function saveExercise(event) {
         </div>     
  @endforeach
 
+
+<!-- onsubmit="saveExercise(event) -->
 
 @endsection
