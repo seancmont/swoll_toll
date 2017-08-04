@@ -28,13 +28,49 @@ span.icon-bar {
 
 /*Body of page*/
 
+div.links, div.links a {
+	color: #a7a7a2;
+}
+
+div.container {
+	display: inline-block;
+}
+
 label {
 	margin: 10px;
 }
 
 body {
-	color: #6E7783;
-	background: 
+	color: #6E7783; 
+}
+
+.content {
+	color: #a7a7a2;
+}
+
+/*login button*/
+
+.btn-primary {
+    color: #fff;
+    background-color: #a7a7a2;
+    border-color: white;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #004e66;
+}
+
+/*forgot password link*/
+
+.btn-link {
+    color: #a7a7a2;
+    font-weight: 400;
+}
+
+.btn-link:hover {
+	color: #004e66;
+	font-weight: 400;
 }
 
 
@@ -71,4 +107,19 @@ tr:hover {
 form {
 	margin-top: 15px;
 	margin-left: 5px;
+}
+
+button {
+	color: #fff;
+	background-color: #a7a7a2;
+}
+
+button:hover {
+	color: #fff;
+	background-color: #004e66;
+}
+
+#submitButton {
+	margin-top: 10px;
+	margin-left: 10px;
 }

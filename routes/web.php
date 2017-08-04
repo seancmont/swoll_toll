@@ -15,7 +15,8 @@ Route::get('/about', function() {
 	return view('about'); 
 });
 // Route to call exercises page
-Route::get('/exercises', 'exercisesController@index'); 
+Route::get('/exercises', 'exercisesController@index');
+Route::post('/exercises/save', 'exercisesController@save'); 
 
 // Route to call lift charts page
 Route::get('/charts', 'chartsController@index');
@@ -28,4 +29,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/musclegroups', 'muscle_groupsController@index');
+
+
 

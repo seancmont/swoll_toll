@@ -12,4 +12,9 @@ class exercisesController extends Controller
 
     	return view('exercises', compact('exercises'));
     }
+
+    public function save()
+    {
+    	return "saving data";
+    }
 }

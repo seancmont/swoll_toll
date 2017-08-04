@@ -56,6 +56,9 @@ Controller created successfully.
 
 9. make table to display exercise names, weights and total_reps, filling with data from sql for each muscle group
 
+10. add input forms to exercise table giving user option to add new exercise. must be able to submit workout to database
+
+11. add/delete buttons
 
 
 
