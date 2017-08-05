@@ -90,12 +90,11 @@ function saveExercise(event) {
 					    	<td><input id="newExerciseReps" type="integer" name="newExerciseReps"></td>
 		  			</tr>	
 					</table>
-							<button type="submit" id="submitButton">submit</button>
+							<button type="submit" id="submitButton">Submit</button>
 				</form>
         </div>     
  @endforeach
 
-
-<!-- onsubmit="saveExercise(event) -->
+<button type="toCharts" id="toCharts"><a href=/charts>Charts</a></button>
 
 @endsection

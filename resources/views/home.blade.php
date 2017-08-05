@@ -17,13 +17,6 @@
         <div class="work m-b-md" style="display:flex; justify-content:center">
             Let's get to work
         </div>
-
-    <!-- <ul class="center-nav" style="display:flex; justify-content:center">
-        <li class="page-links"><a href="about">About</a></li>
-        <li class="page-links"><a href="exercises">Exercises</a></li>
-        <li class="page-links"><u><a href="charts">Charts</a></li>
-        <li class="page-links"><u><a href="progress">Progress</a></li>
-    </ul> -->
     </body>
 </html>
 

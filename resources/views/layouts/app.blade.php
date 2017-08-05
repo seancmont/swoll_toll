@@ -30,7 +30,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('The Swoll Toll', 'The Swoll Toll') }}
+                        {{ config('THE SWOLL TOLL', 'THE SWOLL TOLL') }}
                     </a>
                 </div>
 

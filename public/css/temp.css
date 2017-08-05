@@ -26,7 +26,12 @@ span.icon-bar {
 	background: white;
 }
 
-.dropdown-menu>li>a, a {
+.dropdown-menu>li>a {
+    font-weight: 400;
+    color: white;
+}
+
+.dropdown-menu>li>a:hover {
     font-weight: 400;
     color: #004e66;
 }
@@ -127,9 +132,12 @@ form {
 	margin-left: 5px;
 }
 
+/*submit workout button*/
+
 button {
 	color: #fff;
 	background-color: #a7a7a2;
+	border-radius: 3px;
 }
 
 button:hover {
@@ -140,4 +148,40 @@ button:hover {
 #submitButton {
 	margin-top: 10px;
 	margin-left: 10px;
+}
+
+/*link to charts*/
+#toCharts {
+	color: #fff;
+	background-color: #a7a7a2;
+	float: right;
+	border-radius: 3px;
+	margin: 15px 40px 0 0;
+}
+
+#toCharts:hover {
+	color: #fff;
+	background-color: #004e66;
+}
+
+#toCharts, a:hover{
+	color: #fff;
+}
+
+/*link to progress*/
+#toProgress {
+	color: #fff;
+	background-color: #a7a7a2;
+	float: right;
+	border-radius: 3px;
+	margin: 15px 40px 0 0;
+}
+
+#toProgress:hover {
+	color: #fff;
+	background-color: #004e66;
+}
+
+#toProgress, a:hover{
+	color: #fff;
 }
