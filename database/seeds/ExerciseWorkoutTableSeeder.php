@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 
-class Exercise_WorkoutTableSeeder extends Seeder
+class ExerciseWorkoutTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

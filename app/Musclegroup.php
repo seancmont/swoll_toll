@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class muscle_groups extends Model
+class Musclegroup extends Model
 {
 
 	//Allows us to not hard delete everything
@@ -15,7 +15,7 @@ class muscle_groups extends Model
 
     //Specifying the join relationships
 	public function exercises() {
-      return $this->hasMany('App\Exercises');
+      return $this->hasMany('App\Exercise');
     }
     
 }

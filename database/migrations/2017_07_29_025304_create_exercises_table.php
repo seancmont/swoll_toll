@@ -15,8 +15,8 @@ class CreateExercisesTable extends Migration
     {
         Schema::create('exercises', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('muscle_groups_id');
-            $table->foreign('muscle_groups_id')->references('id')->on('muscle_groups');
+            $table->integer('musclegroup_id');
+            $table->foreign('musclegroup_id')->references('id')->on('musclegroups');
             $table->string('name');
             // $table->integer('weight');
             // $table->integer('total_reps');

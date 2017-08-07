@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class progressController extends Controller
+class ProgressController extends Controller
 {
     public function index()
     {
-    	$exercises = \App\muscle_groups::with(['exercises'])->get();
+    	$exercises = \App\Musclegroup::with(['exercises'])->get();
 
     	return view('progress', compact('exercises'));
     }

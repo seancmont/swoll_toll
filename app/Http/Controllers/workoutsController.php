@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use \App\muscle_groups;
-use \App\exercises;
+use \App\Musclegroup;
+use \App\Exercise;
 
-class workoutsController extends Controller
+class WorkoutsController extends Controller
 {
 	public function index()
     {
-    	$workouts = muscle_groups::with(['exercises'])->get();
+    	$workouts = Musclegroup::with(['exercises'])->get();
 
     	return view('exercises', compact('exercises'));
     }
