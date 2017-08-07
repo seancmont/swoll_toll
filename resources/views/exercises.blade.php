@@ -28,6 +28,7 @@ function chosenMuscle() {
 		showExercises.style.display = 'block';
 }
 
+// function to save new input values as a new var currentTable
 function saveExercise(event) {
 	// var child = document.getElementById("muscleList").childNodes;
 	// console.log(child);
@@ -91,10 +92,11 @@ function saveExercise(event) {
 		  			</tr>	
 					</table>
 							<button type="submit" id="submitButton">Submit</button>
+							<button type="toCharts" id="toCharts"><a href=/charts>Charts</a></button>
 				</form>
         </div>     
  @endforeach
 
-<button type="toCharts" id="toCharts"><a href=/charts>Charts</a></button>
+
 
 @endsection

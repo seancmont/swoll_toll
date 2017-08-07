@@ -10,7 +10,9 @@
 <body>
 	<div class="container">
 		
-		<img src="{{asset('resources/assets/images/seven-sacred-pools.JPG')}}" alt="seven-sacred-pools" style="width:304px;height:228px;">
+		<div id="profilePic">
+			<img src="{{asset('resources/assets/images/seven-sacred-pools.JPG')}}" alt="seven-sacred-pools" style="width:304px;height:228px;">
+		</div>
 		<h1>User Profile</h1>
 		<p>Let's get to know each other</p>
 			<table class="userProfile">

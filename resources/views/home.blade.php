@@ -11,7 +11,7 @@
                 <a href=/about>About</a>
                 <a href=/exercises>Exercises</a>
                 <a href=/charts>Charts</a>
-                <a href=/progress>Progress</a
+                <a href=/progress>Progress</a>
             </div>
         </div>
         <div class="work m-b-md" style="display:flex; justify-content:center">

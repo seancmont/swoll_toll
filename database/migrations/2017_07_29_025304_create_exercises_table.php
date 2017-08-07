@@ -18,8 +18,8 @@ class CreateExercisesTable extends Migration
             $table->integer('muscle_groups_id');
             $table->foreign('muscle_groups_id')->references('id')->on('muscle_groups');
             $table->string('name');
-            $table->integer('weight');
-            $table->integer('total_reps');
+            // $table->integer('weight');
+            // $table->integer('total_reps');
             $table->timestamps();
         });
     }

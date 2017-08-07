@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\muscle_groups;
 use \App\exercises;
+use \App\workouts;
 
 
 class exercisesController extends Controller

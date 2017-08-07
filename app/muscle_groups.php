@@ -18,7 +18,4 @@ class muscle_groups extends Model
       return $this->hasMany('App\Exercises');
     }
     
-    public function workouts() {
-      return $this->hasMany('App\workouts');
-    }
 }

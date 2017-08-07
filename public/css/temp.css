@@ -7,7 +7,7 @@
 
 a.navbar-brand {
 	color: white;
-	letter-spacing: 2px;
+	letter-spacing: 8px;
 
 }
 
@@ -38,6 +38,7 @@ span.icon-bar {
 
 /*Body of page*/
 
+
 div.payit.m-b-md {
 	color: #a7a7a2;
 	margin-top: 20px;
@@ -61,6 +62,15 @@ div.container {
 
 label {
 	margin: 10px;
+}
+
+h1, p {
+	text-align: left;
+	margin-left: 10px;
+}
+
+#profilePic {
+	margin-left: 10px;
 }
 
 body {
@@ -148,15 +158,15 @@ button:hover {
 #submitButton {
 	margin-top: 10px;
 	margin-left: 10px;
+	margin-right: 367px;	
 }
 
 /*link to charts*/
-#toCharts {
+#toCharts:after, :before {
 	color: #fff;
 	background-color: #a7a7a2;
 	float: right;
 	border-radius: 3px;
-	margin: 15px 40px 0 0;
 }
 
 #toCharts:hover {
@@ -174,7 +184,7 @@ button:hover {
 	background-color: #a7a7a2;
 	float: right;
 	border-radius: 3px;
-	margin: 15px 40px 0 0;
+	margin: 15px 10px 0 0;
 }
 
 #toProgress:hover {
