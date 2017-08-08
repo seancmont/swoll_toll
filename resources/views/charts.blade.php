@@ -30,14 +30,41 @@ function chosenMuscle() {
 }
 </script>
 
-<!-- get data from exercise table in database-->
-
-
-
-<!-- populate table with chosen muscle group and inputted data for each column-->
+<label for="workouts">Choose a workout </label>
+<select id="workoutList" onchange="chosenWorkout();">
+<option>Please select</option>
+		<!-- list of workouts to control the dropdown -->
+            @foreach ($workouts as $workout) 
+            	<!-- the exercise name from database goes where original option value was -->
+				<option value="{{ $exercise_workout->exercise_id }}">{{ $exercise_workout->weight }}{{ $exercise_workout->total_reps }}</option>
+            @endforeach
+ </select>
 
  @foreach ($exercises as $muscleGroup) 
 		<div class="muscleList" id="{{ $muscleGroup->name }}">		
+			<table>
+			 	<tr>
+				    <th>Name</th>
+				    <th>Weight</th> 
+				    <th>Total Reps</th>
+			 	</tr>
+
+			@foreach ($muscleGroup->exercises as $exercise)
+				<tr>
+				    <td>{{ $workout->id }}</td>
+				    <td>{{ $workout->weight }}</td> 
+				    <td>{{ $workout->total_reps }}</td>
+			    </tr>
+			@endforeach
+				
+			</table>
+
+			<p>Looking swoll, bro!</p>
+        </div>        
+ @endforeach
+
+<!--  @foreach ($workouts as $workout) 
+		<div class="workoutList" id="{{ $workout->id }}">		
 			<table>
 			 	<tr>
 				    <th>Name</th>
@@ -54,9 +81,11 @@ function chosenMuscle() {
 			@endforeach
 				
 			</table>
-        </div>        
- @endforeach
 
- <button type="toWorkouts" id="toWorkouts"><a href=/workouts>Workouts</a></button>
+			<p>Looking swoll, bro!</p>
+        </div>        
+ @endforeach -->
+ 
+ <button type="button" class="toWorkouts"><a href=/workouts>Workouts</a></button>
 
  @endsection

@@ -8,27 +8,29 @@
 	<title>The Swoll Toll</title>
 </head>
 <body>
-	<div class="container">
+	<div class="profileContainer"><span>
 		
-		<div id="profilePic">
-			<img src="{{asset('resources/assets/images/seven-sacred-pools.JPG')}}" alt="seven-sacred-pools" style="width:304px;height:228px;">
+		<div>
+			<img class="seanPic2" src="/images/weddingDomination.jpg" alt="sean-dominating-dance-floor">
 		</div>
-		<h1>User Profile</h1>
-		<p>Let's get to know each other</p>
+		<h2>User Profile</h2>
+		<p>Dance floor domination begins with stretching and squats</p>
 			<table class="userProfile">
 			  <tr>
 			    <th>Username</th>
 			    <th>Start Date</th> 
 			    <th>Weight</th>
+			    <th>Level</th>
 			  </tr>
 			  <tr>
 			    <td>montymonty41</td>
 			    <td>7/11/17</td> 
 			    <td>188</td>
+			    <td>Beast</td>
 			  </tr>
 			</table>
 		
-	</div>
+	</span></div>
 </body>
 </html>
 <button type="toHome" id="toHome"><a href=/home>Home</a></button>

@@ -9,9 +9,10 @@
             <!-- links to different sections of the site -->
             <div class="links" style="display:flex; justify-content:center">
                 <a href=/about>About</a>
+                <a href=/user>Profile</a>
                 <a href=/exercises>Exercises</a>
-                <a href=/charts>Charts</a>
                 <a href=/workouts>Workouts</a>
+                <a href=/charts>Charts</a>
             </div>
         </div>
         <div class="work m-b-md" style="display:flex; justify-content:center">

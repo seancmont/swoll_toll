@@ -22,7 +22,7 @@ class ExercisesController extends Controller
     {
     	// TODO: persist workout & get workout id
     	$workout = new workout;
-    	$workout->name = 'test workout';
+    	$workout->name = 'test workout 3';
     	$workout->save();
 
     	foreach ($request->exercises as $exId => $exercise) {
@@ -37,6 +37,5 @@ class ExercisesController extends Controller
     		// TODO-- make sure this worked
     	}
 
-    	// TODO-- return valid 201 Created status & workout response
     }
 }

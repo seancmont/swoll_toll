@@ -6,6 +6,8 @@
 
 <h2>My Workouts</h2>
 
+<div class="myWorkouts">
+
 @foreach ($workouts as $workout)
 
    <div class="col-xs-3" id="workoutLinks">
@@ -17,7 +19,8 @@
 
 @endforeach
 
+</div>
 
-
+<button type="toHome" id="toHome"><a href=/home>Home</a></button>
 
  @endsection

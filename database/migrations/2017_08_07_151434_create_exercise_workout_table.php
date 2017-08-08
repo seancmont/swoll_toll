@@ -14,14 +14,14 @@ class CreateExerciseWorkoutTable extends Migration
     public function up()
     {
         Schema::create('exercise_workout', function (Blueprint $table) {
-            // $table->increments('id');
+            $table->increments('id');
             $table->integer('workout_id')->unsigned();
             $table->integer('exercise_id')->unsigned();
             $table->foreign('workout_id')->references('id')->on('workouts');
             $table->foreign('exercise_id')->references('id')->on('exercises');
             $table->integer('weight');
             $table->integer('total_reps');
-            // $table->timestamps();
+            $table->timestamps();
         });
     }
 

@@ -9,7 +9,6 @@
 a.navbar-brand {
 	color: white;
 	letter-spacing: 8px;
-
 }
 
 .navbar-toggle {
@@ -19,7 +18,7 @@ a.navbar-brand {
     border-radius: 4px;
 }
 
-a {
+.collapse navbar-collapse {
 	color: white;
 }
 
@@ -32,7 +31,7 @@ a.dropdown-toggle:hover {
 	color: #a7a7a2;
 }
 
-ul.dropdown-menu, a {
+ul.dropdown-menu {
 	color: #a7a7a2;
 }
 
@@ -42,7 +41,7 @@ span.icon-bar {
 
 .dropdown-menu>li>a {
     font-weight: 400;
-    color: white;
+    color: #a7a7a2;
 }
 
 .dropdown-menu>li>a:hover {
@@ -52,7 +51,7 @@ span.icon-bar {
 
 /*Body of page*/
 
-
+/*intro page*/
 div.payit.m-b-md, div.work.m-b-md {
 	color: #a7a7a2;
 	margin-top: 20px;
@@ -78,15 +77,32 @@ label {
 	margin: 10px;
 }
 
+/*heading on pages*/
 h2, p {
 	text-align: left;
 	margin-left: 10px;
 }
 
-#profilePic {
+/*about page pic*/
+.seanPic {
 	margin-left: 10px;
+	max-width: 40%;
+	height: auto;
+	border-radius: 40px;
 }
 
+/*user page*/
+
+.profileContainer {
+	display: inline-block;
+}
+
+.seanPic2 {
+	margin-left: 10px;
+	max-width: 40%;
+	height: auto;
+	border-radius: 40px;
+}
 body {
 	color: #6E7783; 
 }
@@ -97,16 +113,13 @@ body {
 
 /*workouts page*/
 
-div#workoutLinks.col-xs-3 {
+
+div.myWorkouts a {
 	color: #a7a7a2;
 }
 
-div#workoutLinks.col-xs-3, a:hover {
+div.myWorkouts a:hover {
 	color: #004e66;
-}
-
-div#app {
-
 }
 
 
@@ -193,9 +206,7 @@ button:hover {
 /*link to charts*/
 #toCharts a {
 	color: #fff;
-	background-color: #a7a7a2;
 	float: right;
-	border-radius: 3px;
 }
 
 #toCharts:hover {
@@ -207,16 +218,16 @@ button:hover {
 	color: #fff;
 }*/
 
-/*link to progress*/
-#toWorkouts {
-	color: #fff;
+/*link to workouts*/
+.toWorkouts {
+	color: white;
 	background-color: #a7a7a2;
 	float: right;
 	border-radius: 3px;
 	margin: 15px 10px 0 0;
 }
 
-#toWorkouts:hover {
+.toWorkouts:hover {
 	color: #fff;
 	background-color: #004e66;
 }
