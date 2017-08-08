@@ -80,23 +80,24 @@ function saveExercise(event) {
 				@foreach ($muscleGroup->exercises as $exercise)
 					<tr>
 							<td>{{ $exercise->name }}</td>
-							<input type="hidden" name="{{ $exercise->name }}_name" value="{{ $exercise->name }}">
-							<td><input type="integer" name="{{ $exercise->name }}_Weight"></td>
-					    	<td><input type="integer" name="{{ $exercise->name }}_Total Reps"></td>	
+							<input type="hidden" name="exercises[{{ $exercise->id }}][id]" value="{{ $exercise->id }}">
+							<td><input type="integer" name="exercises[{{ $exercise->id }}][weight]"></td>
+					    	<td><input type="integer" name="exercises[{{ $exercise->id }}][reps]"></td>	
 					</tr>
 				@endforeach
 					<tr>		  			
-							<td><input id="newExerciseName" type="text" name="newExerciseName"></td>
-							<td><input id="newExerciseWeight" type="integer" name="newExerciseWeight"></td>
-					    	<td><input id="newExerciseReps" type="integer" name="newExerciseReps"></td>
+							<td><input id="newExerciseName" type="text" name="newExercises[][name]"></td>
+							<td><input id="newExerciseWeight" type="integer" name="newExercises[][weight]"></td>
+					    	<td><input id="newExerciseReps" type="integer" name="newExercises[][reps]"></td>
 		  			</tr>	
 					</table>
 							<button type="submit" id="submitButton">Submit</button>
 							<button type="toCharts" id="toCharts"><a href=/charts>Charts</a></button>
 				</form>
         </div>     
+
  @endforeach
 
-
-
+<button type="toHome" id="toHome"><a href=/home>Home</a></button>
 @endsection
+

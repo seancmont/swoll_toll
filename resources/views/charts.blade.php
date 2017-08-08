@@ -57,6 +57,6 @@ function chosenMuscle() {
         </div>        
  @endforeach
 
- <button type="toProgress" id="toProgress"><a href=/progress>Progress</a></button>
+ <button type="toWorkouts" id="toWorkouts"><a href=/workouts>Workouts</a></button>
 
  @endsection

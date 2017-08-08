@@ -27,9 +27,11 @@
 			    <td>188</td>
 			  </tr>
 			</table>
+		
 	</div>
 </body>
 </html>
-
+<button type="toHome" id="toHome"><a href=/home>Home</a></button>
 
 @endsection
+

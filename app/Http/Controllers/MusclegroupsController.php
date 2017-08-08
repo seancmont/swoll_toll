@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Musclegroup;
 use App\Http\Auth;
 
+
 class MusclegroupsController extends Controller
 {
     public function index()

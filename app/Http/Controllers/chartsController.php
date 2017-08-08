@@ -8,7 +8,7 @@ class chartsController extends Controller
 {
     public function index()
     {
-    	$exercises = \App\muscle_groups::with(['exercises'])->get();
+    	$exercises = \App\Musclegroup::with(['exercises'])->get();
 
     	return view('charts', compact('exercises'));
     }

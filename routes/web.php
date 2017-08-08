@@ -15,20 +15,21 @@ Route::get('/about', function() {
 	return view('about'); 
 });
 // Route to call exercises page
-Route::get('/exercises', 'exercisesController@index');
-Route::post('/exercises', 'exercisesController@save'); 
+Route::get('/exercises', 'ExercisesController@index');
+Route::post('/exercises', 'ExercisesController@save'); 
 
 // Route to call lift charts page
 Route::get('/charts', 'chartsController@index');
 
-// Route to call page that tracks lift gainz
-Route::get('/progress', 'progressController@index');
+// Route to call page displaying list of submitted workouts
+Route::get('/workouts', 'WorkoutsController@index');
+Route::get('/workouts/{id}', 'WorkoutsController@show');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/musclegroups', 'muscle_groupsController@index');
+Route::get('/musclegroups', 'MusclegroupsController@index');
 
 
 

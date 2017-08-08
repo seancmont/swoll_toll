@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use \App\Musclegroup;
 use \App\Exercise;
 use \App\Workout;
+use \App\Exerciseworkout;
 
 
 class ExercisesController extends Controller
@@ -19,10 +20,23 @@ class ExercisesController extends Controller
 // $request contains contents of post in exercises form
     public function save(Request $request)
     {
-    	return $request->all();
-    	// $exercises = new exercises;
-    	// $exercises->name = $request->name;
-    	// $exercises->save();
-    	// return back();
+    	// TODO: persist workout & get workout id
+    	$workout = new workout;
+    	$workout->name = 'test workout';
+    	$workout->save();
+
+    	foreach ($request->exercises as $exId => $exercise) {
+    		$ex = new exerciseworkout;
+    		$ex->workout_id = $workout->id;
+    		$ex->exercise_id = $exercise['id'];
+    		$ex->weight = $exercise['weight'];
+    		$ex->total_reps = $exercise['reps'];
+
+    		$ex->save();
+
+    		// TODO-- make sure this worked
+    	}
+
+    	// TODO-- return valid 201 Created status & workout response
     }
 }

@@ -13,7 +13,12 @@ class WorkoutsTableSeeder extends Seeder
     public function run()
     {
         DB::table('workouts')->insert([
-        'name' => 'today',
+        'name' => 'Sunday August 6 2017',
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
+    ]);
+        DB::table('workouts')->insert([
+        'name' => 'Monday August 7 2017',
         'created_at' => Carbon::now(),
         'updated_at' => Carbon::now(),
     ]);

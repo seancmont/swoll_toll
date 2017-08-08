@@ -3,6 +3,7 @@
 .top-navbar {
 	background: #F16B6F;
 	color: white;
+	margin-bottom: 50px;
 }
 
 a.navbar-brand {
@@ -22,6 +23,19 @@ a {
 	color: white;
 }
 
+/*dropdown menu on right*/
+a.dropdown-toggle {
+	color: white;
+}
+
+a.dropdown-toggle:hover {
+	color: #a7a7a2;
+}
+
+ul.dropdown-menu, a {
+	color: #a7a7a2;
+}
+
 span.icon-bar {
 	background: white;
 }
@@ -39,7 +53,7 @@ span.icon-bar {
 /*Body of page*/
 
 
-div.payit.m-b-md {
+div.payit.m-b-md, div.work.m-b-md {
 	color: #a7a7a2;
 	margin-top: 20px;
 }
@@ -64,7 +78,7 @@ label {
 	margin: 10px;
 }
 
-h1, p {
+h2, p {
 	text-align: left;
 	margin-left: 10px;
 }
@@ -80,6 +94,21 @@ body {
 .content {
 	color: #a7a7a2;
 }
+
+/*workouts page*/
+
+div#workoutLinks.col-xs-3 {
+	color: #a7a7a2;
+}
+
+div#workoutLinks.col-xs-3, a:hover {
+	color: #004e66;
+}
+
+div#app {
+
+}
+
 
 /*login button*/
 
@@ -142,8 +171,8 @@ form {
 	margin-left: 5px;
 }
 
+/*buttons*/
 /*submit workout button*/
-
 button {
 	color: #fff;
 	background-color: #a7a7a2;
@@ -162,7 +191,7 @@ button:hover {
 }
 
 /*link to charts*/
-#toCharts:after, :before {
+#toCharts a {
 	color: #fff;
 	background-color: #a7a7a2;
 	float: right;
@@ -174,12 +203,12 @@ button:hover {
 	background-color: #004e66;
 }
 
-#toCharts, a:hover{
+/*#toCharts, a:hover{
 	color: #fff;
-}
+}*/
 
 /*link to progress*/
-#toProgress {
+#toWorkouts {
 	color: #fff;
 	background-color: #a7a7a2;
 	float: right;
@@ -187,11 +216,17 @@ button:hover {
 	margin: 15px 10px 0 0;
 }
 
-#toProgress:hover {
+#toWorkouts:hover {
 	color: #fff;
 	background-color: #004e66;
 }
 
-#toProgress, a:hover{
+
+/*#toWorkouts, a:hover{
+	color: #a7a7a2;
+}*/
+
+#toHome a {
 	color: #fff;
+	float: right;
 }
