@@ -2,6 +2,10 @@
 
 @section('content')
 
+<button class="btn" id="toHome"><a href=/home>Home</a></button>
+<button class="btn" id="toWorkouts"><a href=/workouts>Workouts</a></button>
+
+<h2>Check those mad gainz, brochacho!</h2>
 <label for="muscleGroups">Choose muscle group to chart </label>
 <select id="muscleGroups" onchange="chosenMuscle();">
 <option>Please select</option>
@@ -30,41 +34,8 @@ function chosenMuscle() {
 }
 </script>
 
-<label for="workouts">Choose a workout </label>
-<select id="workoutList" onchange="chosenWorkout();">
-<option>Please select</option>
-		<!-- list of workouts to control the dropdown -->
-            @foreach ($workouts as $workout) 
-            	<!-- the exercise name from database goes where original option value was -->
-				<option value="{{ $exercise_workout->exercise_id }}">{{ $exercise_workout->weight }}{{ $exercise_workout->total_reps }}</option>
-            @endforeach
- </select>
-
  @foreach ($exercises as $muscleGroup) 
 		<div class="muscleList" id="{{ $muscleGroup->name }}">		
-			<table>
-			 	<tr>
-				    <th>Name</th>
-				    <th>Weight</th> 
-				    <th>Total Reps</th>
-			 	</tr>
-
-			@foreach ($muscleGroup->exercises as $exercise)
-				<tr>
-				    <td>{{ $workout->id }}</td>
-				    <td>{{ $workout->weight }}</td> 
-				    <td>{{ $workout->total_reps }}</td>
-			    </tr>
-			@endforeach
-				
-			</table>
-
-			<p>Looking swoll, bro!</p>
-        </div>        
- @endforeach
-
-<!--  @foreach ($workouts as $workout) 
-		<div class="workoutList" id="{{ $workout->id }}">		
 			<table>
 			 	<tr>
 				    <th>Name</th>
@@ -83,9 +54,9 @@ function chosenMuscle() {
 			</table>
 
 			<p>Looking swoll, bro!</p>
+			
         </div>        
- @endforeach -->
- 
- <button type="button" class="toWorkouts"><a href=/workouts>Workouts</a></button>
+ @endforeach
+  <img class="lineChart" src="/images/lineChart.jpg" alt="lineChart">
 
  @endsection

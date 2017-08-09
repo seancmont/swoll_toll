@@ -2,7 +2,12 @@
 
 @section('content')
 
-<label for="muscleGroups">Choose today's muscle group for your lift: </label>
+<button class="btn" id="toHome"><a href=/home>Home</a></button>
+<button class="btn" id="toWorkouts"><a href=/workouts>Workouts</a></button>
+
+<h2>Exercises</h2>
+
+<label for="muscleGroups">Pick that muscle group to burn today </label>
 <select id="muscleGroups" onchange="chosenMuscle();">
 <option>Please select</option>
 		<!-- list of each muscle group -->
@@ -91,13 +96,11 @@ function saveExercise(event) {
 					    	<td><input id="newExerciseReps" type="integer" name="newExercises[][reps]"></td>
 		  			</tr>	
 					</table>
-							<button type="submit" id="submitButton">Submit</button>
-							<button type="toCharts" id="toCharts"><a href=/charts>Charts</a></button>
+							<button class="btn" id="submitButton">Submit</button>
 				</form>
         </div>     
 
  @endforeach
 
-<button type="toHome" id="toHome"><a href=/home>Home</a></button>
 @endsection
 

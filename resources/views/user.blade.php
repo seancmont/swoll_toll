@@ -1,19 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>The Swoll Toll</title>
-</head>
-<body>
+
+<button class="btn" id="toHome"><a href=/home>Home</a></button>
+
 	<div class="profileContainer"><span>
 		
 		<div>
 			<img class="seanPic2" src="/images/weddingDomination.jpg" alt="sean-dominating-dance-floor">
 		</div>
-		<h2>User Profile</h2>
+		<h2>Fill in your info and update that profile pic, playa</h2>
 		<p>Dance floor domination begins with stretching and squats</p>
 			<table class="userProfile">
 			  <tr>
@@ -33,7 +29,6 @@
 	</span></div>
 </body>
 </html>
-<button type="toHome" id="toHome"><a href=/home>Home</a></button>
 
 @endsection
 

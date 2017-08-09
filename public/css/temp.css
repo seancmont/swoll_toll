@@ -22,6 +22,14 @@ a.navbar-brand {
 	color: white;
 }
 
+.loginRegister a {
+	color: white;
+}
+
+.loginRegister a:hover {
+	color: #F16B6F;
+}
+
 /*dropdown menu on right*/
 a.dropdown-toggle {
 	color: white;
@@ -54,11 +62,13 @@ span.icon-bar {
 /*intro page*/
 div.payit.m-b-md, div.work.m-b-md {
 	color: #a7a7a2;
+	font-size: 16px;
 	margin-top: 20px;
-}
+} 
 
 div.links, div.links a {
-	color: #a7a7a2;
+	color: #F16B6F;
+	font-size: 22px;
 	padding-right: 15px;
 	padding-left: 15px;
 }
@@ -74,13 +84,13 @@ div.container {
 }
 
 label {
-	margin: 10px;
+	margin: 15px;
 }
 
 /*heading on pages*/
 h2, p {
 	text-align: left;
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 /*about page pic*/
@@ -122,6 +132,12 @@ div.myWorkouts a:hover {
 	color: #004e66;
 }
 
+/*charts page*/
+
+.lineChart {
+	width: 600px;
+	height: 350px;
+}
 
 /*login button*/
 
@@ -186,13 +202,13 @@ form {
 
 /*buttons*/
 /*submit workout button*/
-button {
+#submitButton {
 	color: #fff;
 	background-color: #a7a7a2;
 	border-radius: 3px;
 }
 
-button:hover {
+#submitButton:hover {
 	color: #fff;
 	background-color: #004e66;
 }
@@ -219,25 +235,24 @@ button:hover {
 }*/
 
 /*link to workouts*/
-.toWorkouts {
+#toWorkouts a {
 	color: white;
-	background-color: #a7a7a2;
-	float: right;
 	border-radius: 3px;
-	margin: 15px 10px 0 0;
 }
 
-.toWorkouts:hover {
+#toWorkouts:hover {
 	color: #fff;
 	background-color: #004e66;
 }
-
-
-/*#toWorkouts, a:hover{
-	color: #a7a7a2;
-}*/
+#toHome {
+	margin-left: 15px;
+}
 
 #toHome a {
 	color: #fff;
-	float: right;
+}
+
+#toHome:hover {
+	color: #fff;
+	background-color: #004e66;
 }

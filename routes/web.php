@@ -1,7 +1,7 @@
 <?php
 
 // Route to call home page
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 
 });
