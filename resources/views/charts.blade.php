@@ -35,7 +35,7 @@ function chosenMuscle() {
 <option>Please select</option>
 		<!-- list of workouts to control the dropdown -->
             @foreach ($workouts as $workout) 
-            	<!-- the exercise name from database goes where original option value was -->
+            	<!-- the exercise_id from database goes where original option value was -->
 				<option value="{{ $exercise_workout->exercise_id }}">{{ $exercise_workout->weight }}{{ $exercise_workout->total_reps }}</option>
             @endforeach
  </select>
@@ -85,7 +85,7 @@ function chosenMuscle() {
 			<p>Looking swoll, bro!</p>
         </div>        
  @endforeach -->
- 
+
  <button type="button" class="toWorkouts"><a href=/workouts>Workouts</a></button>
 
  @endsection

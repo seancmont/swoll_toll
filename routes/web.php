@@ -19,7 +19,8 @@ Route::get('/exercises', 'ExercisesController@index');
 Route::post('/exercises', 'ExercisesController@save'); 
 
 // Route to call lift charts page
-Route::get('/charts', 'chartsController@index');
+Route::get('/charts', 'chartsController@exercises');
+Route::get('/charts', 'chartsController@workouts');
 
 // Route to call page displaying list of submitted workouts
 Route::get('/workouts', 'WorkoutsController@index');

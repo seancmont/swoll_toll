@@ -17,6 +17,7 @@ class WorkoutsController extends Controller
     	return view('workouts', compact('workouts'));
     }
 
+// shows submitted workout after submit button clicked
     public function show($id){
 
     	// $workout=\App\Workout::find($id);
@@ -28,7 +29,7 @@ class WorkoutsController extends Controller
     }
 
     	
-
+// saves to workout table in db
     public function save(Request $request)
     {
     	return $request->all();

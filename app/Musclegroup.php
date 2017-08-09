@@ -18,4 +18,8 @@ class Musclegroup extends Model
       return $this->hasMany('App\Exercise');
     }
     
+    public function workouts()
+   {
+       return $this->hasManyThrough('App\Workouts', 'App\Exercises');
+   }
 }
