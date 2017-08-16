@@ -102,5 +102,7 @@ function saveExercise(event) {
 
  @endforeach
 
+ <p>Don't forget to stretch! And please, don't skip leg day. Everyone can tell</p>
+
 @endsection
 

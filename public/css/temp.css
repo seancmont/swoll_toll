@@ -9,6 +9,7 @@
 a.navbar-brand {
 	color: white;
 	letter-spacing: 8px;
+	font-size: 22px;
 }
 
 .navbar-toggle {
@@ -50,6 +51,7 @@ span.icon-bar {
 .dropdown-menu>li>a {
     font-weight: 400;
     color: #a7a7a2;
+    font-size: 14px;
 }
 
 .dropdown-menu>li>a:hover {
@@ -68,7 +70,7 @@ div.payit.m-b-md, div.work.m-b-md {
 
 div.links, div.links a {
 	color: #F16B6F;
-	font-size: 22px;
+	font-size: 20px;
 	padding-right: 15px;
 	padding-left: 15px;
 }
@@ -107,8 +109,27 @@ h2, p {
 	display: inline-block;
 }
 
+/*div for profile pic*/
+
+#avatar {
+    background-image: url('/images/seven-sacred-pools.JPG');
+    /* make a square container */
+    width: 80px;
+    height: 80px;
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+    /* center the image vertically and horizontally */
+    background-position: center;
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+    float: right;
+    margin-top: 10px;	
+    margin-right: -200px;	
+}
+
 .seanPic2 {
 	margin-left: 10px;
+	margin-top: 15px;
 	max-width: 40%;
 	height: auto;
 	border-radius: 40px;
@@ -137,6 +158,7 @@ div.myWorkouts a:hover {
 .lineChart {
 	width: 600px;
 	height: 350px;
+	margin-left: 10px;
 }
 
 /*login button*/
@@ -229,10 +251,6 @@ form {
 	color: #fff;
 	background-color: #004e66;
 }
-
-/*#toCharts, a:hover{
-	color: #fff;
-}*/
 
 /*link to workouts*/
 #toWorkouts a {

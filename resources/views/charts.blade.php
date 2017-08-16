@@ -5,7 +5,7 @@
 <button class="btn" id="toHome"><a href=/home>Home</a></button>
 <button class="btn" id="toWorkouts"><a href=/workouts>Workouts</a></button>
 
-<h2>Check those mad gainz, brochacho!</h2>
+<h2>Chart those mad gainz </h2>
 <label for="muscleGroups">Choose muscle group to chart </label>
 <select id="muscleGroups" onchange="chosenMuscle();">
 <option>Please select</option>
@@ -52,11 +52,12 @@ function chosenMuscle() {
 			@endforeach
 				
 			</table>
-
+			<br />
 			<p>Looking swoll, bro!</p>
-			
+			<br />
         </div>        
  @endforeach
+
   <img class="lineChart" src="/images/lineChart.jpg" alt="lineChart">
 
  @endsection

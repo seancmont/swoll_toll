@@ -22,7 +22,7 @@ class ExercisesController extends Controller
     {
         // TODO: persist workout & get workout id
         $workout = new workout;
-        $workout->name = 'Robbie Lift';
+        $workout->name = 'August 16th, 2017';
         $workout->save();
 
         foreach ($request->exercises as $exId => $exercise) {
