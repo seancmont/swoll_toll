@@ -3,9 +3,10 @@
 @section('content')
 
 <button class="btn" id="toHome"><a href=/home>Home</a></button>
+<button class="btn" id="newAvatar"><a href=/home>New Avatar</a></button>
 		
 		
-		<h2>Fill in your info and update that profile pic, playa</h2>
+		<h2>Fill in your info</h2>
 			<table class="userProfile">
 			  <tr>
 			    <th>Username</th>

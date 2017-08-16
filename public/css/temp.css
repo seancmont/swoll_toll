@@ -126,14 +126,6 @@ h2, p {
     margin-top: 10px;	
     margin-right: -200px;	
 }
-
-.seanPic2 {
-	margin-left: 10px;
-	margin-top: 15px;
-	max-width: 40%;
-	height: auto;
-	border-radius: 40px;
-}
 body {
 	color: #6E7783; 
 }
@@ -262,15 +254,15 @@ form {
 	color: #fff;
 	background-color: #004e66;
 }
-#toHome {
+#toHome, #newAvatar {
 	margin-left: 15px;
 }
 
-#toHome a {
+#toHome a, #newAvatar a {
 	color: #fff;
 }
 
-#toHome:hover {
+#toHome:hover, #newAvatar:hover {
 	color: #fff;
 	background-color: #004e66;
 }
