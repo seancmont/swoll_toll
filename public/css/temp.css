@@ -9,7 +9,8 @@
 a.navbar-brand {
 	color: white;
 	letter-spacing: 8px;
-	font-size: 22px;
+	font-size: 42px;
+	padding-top: 35px;
 }
 
 .navbar-toggle {
@@ -34,6 +35,7 @@ a.navbar-brand {
 /*dropdown menu on right*/
 a.dropdown-toggle {
 	color: white;
+	font-size: 16px;
 }
 
 a.dropdown-toggle:hover {
@@ -51,7 +53,7 @@ span.icon-bar {
 .dropdown-menu>li>a {
     font-weight: 400;
     color: #a7a7a2;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .dropdown-menu>li>a:hover {

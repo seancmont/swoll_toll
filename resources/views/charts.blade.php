@@ -6,7 +6,7 @@
 <button class="btn" id="toWorkouts"><a href=/workouts>Workouts</a></button>
 
 <h2>Chart those mad gainz </h2>
-<label for="muscleGroups">Choose muscle group to chart </label>
+<label for="muscleGroups">Choose muscle group to display in chart </label>
 <select id="muscleGroups" onchange="chosenMuscle();">
 <option>Please select</option>
 		<!-- list of each muscle group -->

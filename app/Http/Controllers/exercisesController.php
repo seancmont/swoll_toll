@@ -33,9 +33,8 @@ class ExercisesController extends Controller
             $ex->total_reps = $exercise['reps'];
 
             $ex->save();
-
-            return back();
-
+            // using return back saves only the first inputted table row. without return, all values are saved but user is taken to empty page
+            // return back();
             // TODO-- make sure this worked
         }
 
