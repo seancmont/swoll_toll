@@ -3,7 +3,7 @@
 @section('content')
 
 <button class="btn" id="toHome"><a href=/home>Home</a></button>
-<button class="btn" id="newAvatar"><a href=/home>New Avatar</a></button>
+<!-- <button class="btn" id="newAvatar"><a href=/home>New Avatar</a></button> -->
 		
 		
 		<h2>Fill in your info</h2>
@@ -25,7 +25,7 @@
 			<form enctype="multipart/form-data" action="uploader.php" method="POST">
 			<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
 			Choose a file to upload: <input name="uploadedfile" type="file" /><br />
-			<input type="submit" value="Upload File" />
+			<input type="button" value="Upload File" />
 </form>
 </body>
 </html>
