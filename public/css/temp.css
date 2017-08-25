@@ -99,7 +99,8 @@ h2, p {
 
 /*about page pic*/
 .seanPic {
-	margin-left: 10px;
+    display: block;
+    margin: 0 auto;
 	max-width: 40%;
 	height: auto;
 	border-radius: 40px;
@@ -109,6 +110,17 @@ h2, p {
 
 .profileContainer {
 	display: inline-block;
+}
+
+#uploadPic {
+	color: #fff;
+	background-color: #a7a7a2;
+	border-radius: 3px;
+}
+
+#uploadPic:hover {
+	color: #fff;
+	background-color: #004e66;
 }
 
 /*div for profile pic*/
@@ -158,6 +170,13 @@ div.myWorkouts a:hover {
 	color: #004e66;
 }
 
+#workoutLinks a {
+	color: #F16B6F;
+}
+
+#workoutLinks a:hover {
+	color: #004e66;
+}
 /*charts page*/
 
 .lineChart {
