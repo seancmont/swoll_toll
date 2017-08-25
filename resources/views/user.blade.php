@@ -20,6 +20,12 @@
 			    <td>188</td>
 			    <td>Beast</td>
 			  </tr>
+			  <tr>
+  				<td><input id="userName" type="text" name="newExercises[][userName]"></td>
+  				<td><input id="userStartDate" type="integer" name="newExercises[][userstartDate]"></td>
+				<td><input id="userWeight" type="integer" name="newExercises[][userWeight]"></td>
+		    	<td><input id="userLiftLevel" type="integer" name="newExercises[][userLiftLevel]"></td>
+			  </tr>
 			</table>
 
 			<form enctype="multipart/form-data" action="uploader.php" method="POST">
